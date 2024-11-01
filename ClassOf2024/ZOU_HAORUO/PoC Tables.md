@@ -1,30 +1,29 @@
-# Proof of Concept Tables for Smart Health Bracelet
+# Proof of Concept Table for Smart Health Bracelet
 
-## Traceability Table
-The following table outlines the traceability of SysML elements to real-world devices and their respective functionalities.
+## Overview
+The Smart Health Bracelet integrates various health monitoring technologies to provide users with real-time insights into their health metrics. Each component plays a vital role in ensuring accurate data collection, processing, and user guidance. Below is a comprehensive table detailing the SysML elements mapped to real-world devices, their functionalities, and descriptive documentation.
 
-| **SysML Element**           | **Mapped Real-World Device**          | **Functionality**                              |
-|-----------------------------|---------------------------------------|------------------------------------------------|
-| SmartHealthBracelet         | System Concept                       | Health monitoring wearable                      |
-| SensorModule                | Various Smart Sensors                | Health data collection                          |
-| PowerSupply                 | Generic Battery Unit                 | Power monitoring                                |
-| WearableStrap               | Generic Strap Material               | Wearable support                                |
-| ProcessingUnit              | Guidance Processor                   | Data processing and user guidance               |
-| MoreProHeartRate            | MorePro Fitness Tracker              | Heart rate monitoring                           |
-| WithingsOxygenMonitor       | Withings ScanWatch                   | SpO2 monitoring                                 |
-| SamsungPressureMonitor      | Samsung Galaxy Watch 5               | Blood pressure monitoring                       |
-| MoreProTemperature          | MorePro Fitness Tracker              | Body temperature monitoring                     |
-| GuidanceModule              | Processing Unit Analysis             | Health guidance and lifestyle recommendations    |
-
-## Data Flow Definitions
-This section describes how data flows between various components of the Smart Health Bracelet.
-
-| **Health Metric**           | **States**                                | **Events**                       |
-|-----------------------------|-------------------------------------------|----------------------------------|
-| Heart Rate                  | Idle, Monitoring                          | HeartRateMonitor, HeartRateNormal |
-| Oxygen Level                | Idle, Monitoring                          | OxygenMonitor, OxygenNormal      |
-| Blood Pressure              | Idle, Monitoring                          | PressureMonitor, PressureNormal  |
-| Body Temperature            | Idle, Monitoring                          | TempMonitor, TempNormal          |
+| **SysML Element**           | **Mapped Real-World Device**          | **Functionality**                              | **Description/Documentation**                                                                                  |
+|-----------------------------|---------------------------------------|------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| **SmartHealthBracelet**     | System Concept                        | Health monitoring wearable                      | Represents the integrated Smart Health Bracelet that combines multiple sensors and a guidance module to provide comprehensive health insights tailored to user needs. |
+| **SensorModule**            | Various Smart Sensors                 | Health data collection                          | Incorporates a range of monitoring sensors that accurately record heart rate, SpO2, blood pressure, and temperature from established real-world devices, enhancing reliability.  |
+| **PowerSupply**             | Generic Battery Unit                  | Power monitoring                                | Monitors and reports battery level to ensure uninterrupted device operation, equipped with notifications to alert users when charging is required to maintain functionality.                    |
+| **WearableStrap**           | Generic Strap Material                | Device wearing support                          | A customizable and ergonomic strap designed for comfort, durability, and flexibility, ensuring that users can wear the device effortlessly throughout their daily activities.                                          |
+| **ProcessingUnit**          | Guidance Processor                    | Data processing and guidance                    | Acts as the brain of the bracelet, receiving and processing data from sensors to generate actionable insights and health guidance based on individual user metrics.                   |
+| **MoreProHeartRate**        | MorePro Fitness Tracker               | Heart rate monitoring                           | Utilizes advanced algorithms to continuously monitor heart rate, providing alerts for abnormalities, thereby empowering users to take timely health actions.           |
+| **WithingsOxygenMonitor**   | Withings ScanWatch                    | SpO2 level monitoring                          | Offers continuous monitoring of blood oxygen saturation (SpO2) with high precision, providing alerts when low oxygen levels are detected to prevent potential health risks. |
+| **SamsungPressureMonitor**  | Samsung Galaxy Watch 5                | Blood pressure monitoring                       | Integrates blood pressure monitoring capabilities, issuing timely alerts for hypertension, allowing users to manage their cardiovascular health proactively. |
+| **MoreProTemperature**      | MorePro Fitness Tracker               | Body temperature monitoring                     | Continuously tracks body temperature, identifying fever conditions through threshold triggers, and sending alerts when elevated temperatures are detected. |
+| **GuidanceModule**          | Processing Algorithm                  | Health advice and guidance                      | Analyzes collected data to offer personalized lifestyle advice and alerts for high-risk health readings, promoting proactive health management and informed decision-making.               |
+| **heartRateData**           | MorePro Heart Rate Sensor             | Continuous heart rate tracking                  | Captures real-time heart rate data and transmits it to the guidance module for immediate user alerts, ensuring users are informed of any significant changes.                       |
+| **oxygenLevelData**         | Withings SpO2 Sensor                  | SpO2 data collection                           | Monitors blood oxygen levels and sends critical data to the guidance module to alert users for low oxygen saturation, ensuring they can respond appropriately.                     |
+| **bloodPressureData**       | Samsung Blood Pressure Monitor        | Blood pressure tracking                         | Logs and tracks blood pressure readings, triggering alerts for elevated readings to assist users in managing their blood pressure effectively.                         |
+| **temperatureData**         | MorePro Temperature Sensor            | Body temperature tracking                       | Monitors body temperature continuously, sending alerts if fever conditions are detected, ensuring timely intervention when necessary.                     |
+| **monitorHeartRate**        | MorePro Heart Rate Function           | Heart rate abnormality detection                | Continuously monitors heart rate, providing real-time alerts for any detected abnormalities, thereby enhancing user awareness of their cardiovascular health.                 |
+| **monitorOxygenLevel**      | Withings Oxygen Level Tracker         | Blood oxygen monitoring with alert              | Engages in continuous monitoring of blood oxygen levels, issuing alerts for detected low oxygen conditions, ensuring user safety and health awareness.           |
+| **monitorBloodPressure**    | Samsung Blood Pressure Function       | Hypertension alert function                     | Monitors blood pressure continuously, sending notifications when readings indicate potential hypertension, aiding in proactive health management.                                   |
+| **monitorTemperature**      | MorePro Temperature Function          | Fever alert function                            | Implements continuous temperature monitoring, triggering alerts when a high temperature is detected, facilitating timely health interventions.              |
+| **provideGuidance**         | Processing Unit Analysis              | Health advice                                   | Utilizes received sensor data to analyze trends and provide actionable health recommendations for users, fostering better health management practices.                |
 
 ## Conclusion
-The tables above outline the essential components and data flows within the Smart Health Bracelet, serving as a reference for development and integration.
+This comprehensive table outlines the critical components of the Smart Health Bracelet and their interactions with real-world devices. By integrating advanced monitoring capabilities with user-friendly guidance, the bracelet aims to empower individuals to take charge of their health through informed decision-making and proactive management.
