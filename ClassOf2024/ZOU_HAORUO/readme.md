@@ -62,6 +62,6 @@ The Smart Health Bracelet model represents a significant advancement in personal
 
 For visual representation of the Smart Health Bracelet concept, please refer to the following image:
 
-![Smart Health Bracelet Concept](https://example.com/image.jpg)
+![Smart Health Bracelet Concept](https://github.com/lbalmelli/keio/blob/main/ClassOf2024/ZOU_HAORUO/1.png)
 
-![Smart Health Bracelet Concept]
+
