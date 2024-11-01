@@ -7,9 +7,15 @@ Functionality-wise, the lift chair features multiple essential and safety-focuse
 ![Link to the image](LiftChair.webp)
 
 Here are some revelant prompts for the research of PoC:
+
 •  Prompt 1: "Peux-tu me donner quelques PoC pour le ControlPanel et le moteur ?"
+
 •  Prompt 2: "Par PoC j'entends des éléments déjà existants qui pourraient correspondre à mon projet"
+
 •  Prompt 3: "Et y a-t-il des composants déjà produits par des entreprises qui pourraient correspondre à mes besoins ?"
+
 •  Prompt 4: "Peux-tu m'en proposer d'autres ?"
+
 •  Prompt 5: "Peux-tu me donner un exemple précis de capteur ?"
+
 •  Prompt 6: "Peux-tu me donner des contrôleurs que je pourrais utiliser pour arrêter directement le système en cas de problème ?"
