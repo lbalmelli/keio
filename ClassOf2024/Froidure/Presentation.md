@@ -4,4 +4,4 @@ The Lift Chair System is a detailed SysML v2 model developed to assist individua
 
 Functionality-wise, the lift chair features multiple essential and safety-focused operations. Users can control the chair using simple commands from the control panel, such as "lift," "lower," and "stop," with the motor executing these commands with precision and stability. The model also incorporates advanced safety mechanisms, like obstacle detection sensors and an emergency stop relay, to immediately halt operations in the event of an issue, preventing any harm to the user. The guide rail system ensures that the chair follows a smooth path along the stairs, while the integrated safety controllers actively monitor for potential risks, making the system not only functional but also exceedingly secure and dependable for everyday use.
 
-![Link to the image](img.webp)
+![Link to the image](LiftChair.webp)
