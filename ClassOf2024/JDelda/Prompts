@@ -1,0 +1,20 @@
+List of Prompts
+
+Prompt: Give 3 Assumptions in developing a block-based programming learning tool for high school students.
+
+Prompt: Given the following statement for a product named “block-based programming learning tool”: Students are assumed to have basic familiarity with computers, such as navigating an interface, using a mouse and keyboard, and understanding fundamental computer operations (e.g., saving files, dragging and dropping). This allows the tool to focus on teaching programming concepts rather than basic computer literacy. Can you propose a series of parts and functions to cover the realization of this statement?
+
+Prompt: Can you create a Proof of Concept Model for me based on the latest concept model? Pleas continue to add documentation and do not use "perform" but rather use "action".
+
+Prompt: Can you suggest parts on the market that I could use to realize the model? Can you incorpate it in the Proof of Concept Model?
+
+Prompt: Create a Traceability Table showing elements modified from the concept model to the proof of concept model.
+
+Prompt: Can you update this as a proof of concept where available parts in the market is incorporated?
+
+Prompt: Can you create a table showing how the elements in concept model was updated in elements in proof of concept
+
+Prompt: Add available parts I can use in the market
+
+Prompt: Can you update this as a proof of concept where available parts in the market is incorporated?
+
