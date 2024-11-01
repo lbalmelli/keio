@@ -1,0 +1,373 @@
+package 'Package 1' {
+	package SmartHealthBraceletModel_concept {
+		package PartDefinitions {
+			part def SmartHealthBracelet {
+				part sensorModule : SensorModule;
+				part powerSupply : PowerSupply;
+				part wearableStrap : WearableStrap;
+				part processingUnit : ProcessingUnit;
+			}
+			part def SensorModule {
+				part heartRateMonitor : HeartRateMonitor {
+					inout port port;
+					inout port port;
+				}
+				part bloodOxygenMonitor : BloodOxygenMonitor {
+					inout port port;
+					inout port port;
+				}
+				part bloodPressureMonitor : BloodPressureMonitor {
+					inout port port;
+					inout port port;
+				}
+				part bodyTemperatureMonitor : BodyTemperatureMonitor {
+					inout port port;
+					inout port port;
+				}
+			}
+			part def PowerSupply {
+				attribute batteryLevel : ScalarValues::Real;
+				action monitorBattery {
+					batteryLevel;
+				}
+			}
+			part def WearableStrap {
+				attribute material;
+				attribute size;
+			}
+			part def ProcessingUnit {
+				port sensorDataPort;
+				part guidanceModule : GuidanceModule;
+				action processSensorData {
+					sensorData;
+					guidance;
+				}
+			}
+			part def HeartRateMonitor {
+				attribute heartRateData : ScalarValues::Real;
+				action monitorHeartRate {
+					heartRateData;
+					action;
+				}
+			}
+			part def BloodOxygenMonitor {
+				attribute oxygenLevelData : ScalarValues::Real;
+				action monitorOxygenLevel {
+					oxygenLevelData;
+					action;
+				}
+			}
+			part def BloodPressureMonitor {
+				attribute bloodPressureData : ScalarValues::Real;
+				action monitorBloodPressure {
+					bloodPressureData;
+					action;
+				}
+			}
+			part def BodyTemperatureMonitor {
+				attribute temperatureData : ScalarValues::Real;
+				action monitorTemperature {
+					temperatureData;
+					action;
+				}
+			}
+			part def GuidanceModule {
+				action provideGuidance {
+					alertData : ScalarValues::Real;
+					lifestyleAdvice;
+				}
+			}
+		}
+		package PortDefinitions {
+			port def SensorDataPort {
+				sensorData;
+			}
+		}
+		package BehavioralModel;
+	}
+	package Comment {
+		/* * Traceability Table
+		    * ------------------
+		    * This table provides traceability of each part in the PoC model to real-world devices, 
+		    * describing functionality and mapped device components.
+		    * 
+		    * | SysML Element           | Mapped Real-World Device          | Functionality                                 | Description                                                                                         |
+		    * |-------------------------|-----------------------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------------|
+		    * | `SmartHealthBracelet`   | System Concept                   | Health monitoring wearable                    | Represents the Smart Health Bracelet system with integrated sensors and guidance functionality.      |
+		    * | `SensorModule`          | Various Smart Sensors            | Health data collection                        | Contains various sensors replaced by real-world devices for monitoring heart rate, SpO2, BP, and temperature. |
+		    * | `PowerSupply`           | Generic Battery Unit             | Power monitoring                              | Monitors battery levels, ensuring device functionality with notifications for low charge.           |
+		    * | `WearableStrap`         | Generic Strap Material           | Wearable support                              | The strap component of the bracelet, customizable for comfort and functionality.                   |
+		    * | `ProcessingUnit`        | Guidance Processor               | Data processing and user guidance             | Analyzes sensor data and provides real-time health insights based on data trends.                   |
+		    * | `MoreProHeartRate`      | MorePro Fitness Tracker          | Heart rate monitoring                         | Uses the MorePro heart rate tracking feature to monitor and alert on heart rate abnormalities.      |
+		    * | `WithingsOxygenMonitor` | Withings ScanWatch               | SpO2 monitoring                               | Monitors blood oxygen levels (SpO2) continuously, alerting for low levels detected by the sensor.   |
+		    * | `SamsungPressureMonitor`| Samsung Galaxy Watch 5           | Blood pressure monitoring                     | Monitors blood pressure and provides hypertension alerts using Galaxy Watch functionality.          |
+		    * | `MoreProTemperature`    | MorePro Fitness Tracker          | Body temperature monitoring                   | Tracks body temperature continuously, sending fever alerts when thresholds are exceeded.            |
+		    * | `GuidanceModule`        | Processing Unit Analysis         | Health guidance and lifestyle recommendations | Provides feedback based on sensor data, offering recommendations to manage detected health risks.    |
+		    * | `heartRateData`         | MorePro Heart Rate Sensor        | Continuous heart rate tracking                | Records heart rate data in real-time and sends to guidance module for alerts if irregularities are detected. |
+		    * | `oxygenLevelData`       | Withings SpO2 Sensor             | SpO2 data collection                          | Tracks blood oxygen saturation and sends data for low SpO2 alerts.                                  |
+		    * | `bloodPressureData`     | Samsung Blood Pressure Monitor   | Blood pressure tracking                       | Logs blood pressure data for hypertensive risk analysis and alerts.                                 |
+		    * | `temperatureData`       | MorePro Temperature Sensor       | Body temperature tracking                     | Measures body temperature, sending fever alerts when values exceed safe levels.                     |
+		    * | `monitorHeartRate`      | MorePro Heart Rate Function      | Abnormal heart rate detection                 | Real-time monitoring action to alert on abnormal heart rate events.                                 |
+		    * | `monitorOxygenLevel`    | Withings Oxygen Tracker          | Low SpO2 alert function                       | Continuous monitoring of SpO2 levels with alerts for safe health monitoring.                        |
+		    * | `monitorBloodPressure`  | Samsung Blood Pressure Feature   | Hypertension risk detection                   | Tracks blood pressure and alerts when high levels are detected.                                     |
+		    * | `monitorTemperature`    | MorePro Temperature Function     | Fever alert function                          | Continuous temperature monitoring with fever alerts based on threshold values.                      |
+		    * | `provideGuidance`       | Processing Unit Analysis         | Health advice and lifestyle guidance          | Analyzes sensor data and provides recommendations for health management based on trends.            |
+		    * */
+	}
+	package SmartHealthBraceletModel_PoC {
+		/* * Traceability Table
+		    * ------------------
+		    * This table provides traceability of each part in the PoC model to real-world devices, 
+		    * describing functionality and mapped device components.
+		    * 
+		    * | SysML Element           | Mapped Real-World Device          | Functionality                                 | Description                                                                                         |
+		    * |-------------------------|-----------------------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------------|
+		    * | `SmartHealthBracelet`   | System Concept                   | Health monitoring wearable                    | Represents the Smart Health Bracelet system with integrated sensors and guidance functionality.      |
+		    * | `SensorModule`          | Various Smart Sensors            | Health data collection                        | Contains various sensors replaced by real-world devices for monitoring heart rate, SpO2, BP, and temperature. |
+		    * | `PowerSupply`           | Generic Battery Unit             | Power monitoring                              | Monitors battery levels, ensuring device functionality with notifications for low charge.           |
+		    * | `WearableStrap`         | Generic Strap Material           | Wearable support                              | The strap component of the bracelet, customizable for comfort and functionality.                   |
+		    * | `ProcessingUnit`        | Guidance Processor               | Data processing and user guidance             | Analyzes sensor data and provides real-time health insights based on data trends.                   |
+		    * | `MoreProHeartRate`      | MorePro Fitness Tracker          | Heart rate monitoring                         | Uses the MorePro heart rate tracking feature to monitor and alert on heart rate abnormalities.      |
+		    * | `WithingsOxygenMonitor` | Withings ScanWatch               | SpO2 monitoring                               | Monitors blood oxygen levels (SpO2) continuously, alerting for low levels detected by the sensor.   |
+		    * | `SamsungPressureMonitor`| Samsung Galaxy Watch 5           | Blood pressure monitoring                     | Monitors blood pressure and provides hypertension alerts using Galaxy Watch functionality.          |
+		    * | `MoreProTemperature`    | MorePro Fitness Tracker          | Body temperature monitoring                   | Tracks body temperature continuously, sending fever alerts when thresholds are exceeded.            |
+		    * | `GuidanceModule`        | Processing Unit Analysis         | Health guidance and lifestyle recommendations | Provides feedback based on sensor data, offering recommendations to manage detected health risks.    |
+		    * | `heartRateData`         | MorePro Heart Rate Sensor        | Continuous heart rate tracking                | Records heart rate data in real-time and sends to guidance module for alerts if irregularities are detected. |
+		    * | `oxygenLevelData`       | Withings SpO2 Sensor             | SpO2 data collection                          | Tracks blood oxygen saturation and sends data for low SpO2 alerts.                                  |
+		    * | `bloodPressureData`     | Samsung Blood Pressure Monitor   | Blood pressure tracking                       | Logs blood pressure data for hypertensive risk analysis and alerts.                                 |
+		    * | `temperatureData`       | MorePro Temperature Sensor       | Body temperature tracking                     | Measures body temperature, sending fever alerts when values exceed safe levels.                     |
+		    * | `monitorHeartRate`      | MorePro Heart Rate Function      | Abnormal heart rate detection                 | Real-time monitoring action to alert on abnormal heart rate events.                                 |
+		    * | `monitorOxygenLevel`    | Withings Oxygen Tracker          | Low SpO2 alert function                       | Continuous monitoring of SpO2 levels with alerts for safe health monitoring.                        |
+		    * | `monitorBloodPressure`  | Samsung Blood Pressure Feature   | Hypertension risk detection                   | Tracks blood pressure and alerts when high levels are detected.                                     |
+		    * | `monitorTemperature`    | MorePro Temperature Function     | Fever alert function                          | Continuous temperature monitoring with fever alerts based on threshold values.                      |
+		    * | `provideGuidance`       | Processing Unit Analysis         | Health advice and lifestyle guidance          | Analyzes sensor data and provides recommendations for health management based on trends.            |
+		    * */
+		package PortDefinitions {
+			/* * This is documentation of the owning
+			        * package.
+			        * Contains port definitions for sensor data connection with the processing unit. */
+			port def SensorDataPort {
+				/* * This is documentation of the owning
+				            * port.
+				            * Port for transferring sensor data to processing for analysis. */
+				sensorData;
+				doc /*  Port for transferring sensor data to processing for analysis. */
+			}
+		}
+		sysml;
+		package BraceletConfiguration {
+			/* * This is documentation of the owning
+			        * package.
+			        * Defines the SmartHealthBracelet configuration using real-world device functionalities. */
+			part smartBracelet {
+				part sensorModule {
+					part heartRate;
+					part oxygen;
+					part pressure;
+					part temperature;
+				}
+				part powerSupply;
+				part wearableStrap;
+				part processingUnit {
+					port;
+					part guidanceModule;
+				}
+			}
+			action heartRateFlow;
+			action oxygenLevelFlow;
+			action bloodPressureFlow;
+			action temperatureFlow;
+		}
+		package BehavioralModel {
+			/* * This is documentation of the owning
+			        * package.
+			        * Behavioral state model defining monitoring and alerting states for each health metric. */
+		}
+		package PartDefinitions {
+			/* * This is documentation of the owning
+			        * package.
+			        * Contains part definitions using existing devices to provide health monitoring. */
+			part def SmartHealthBracelet {
+				/* * This is documentation of the owning
+				            * part.
+				            * Represents the overall Smart Health Bracelet with sensor modules,
+				            * power supply, wearable strap, and processing unit for data analysis and feedback. */
+				part sensorModule : SensorModule;
+				part powerSupply : PowerSupply;
+				part wearableStrap : WearableStrap;
+				part processingUnit : ProcessingUnit;
+				doc /* Represents the overall Smart Health Bracelet with sensor modules,power supply, wearable strap, and processing unit for data analysis and feedback. */
+			}
+			part def SensorModule {
+				/* * This is documentation of the owning
+				            * part.
+				            * Contains sensors replaced by real-world device functions for health metrics. */
+				part heartRateMonitor : MoreProHeartRate;
+				part bloodPressureMonitor : SamsungPressureMonitor;
+				part bodyTemperatureMonitor : MoreProTemperature;
+				part bloodOxygenMonitor : WithingsOxygenMonitor;
+				doc /* Contains sensors replaced by real-world device functions for health metrics. */
+			}
+			part def PowerSupply {
+				/* * This is documentation of the owning
+				            * part.
+				            * Represents a general battery unit with monitoring capabilities. */
+				attribute batteryLevel : ScalarValues::Real;
+				action monitorBattery {
+					/* * This is documentation of the owning
+					                * action.
+					                * Tracks battery level and sends notifications when charging is needed. */
+					batteryLevel;
+				}
+				doc /*  Represents a general battery unit with monitoring capabilities. */
+			}
+			part def ProcessingUnit {
+				/* * This is documentation of the owning
+				            * part.
+				            * Receives data from sensors, with guidance function for real-time user feedback. */
+				port sensorDataPort;
+				part guidanceModule : GuidanceModule;
+				action processSensorData {
+					/* * This is documentation of the owning
+					                * action.
+					                * Processes incoming sensor data to produce health insights and recommendations. */
+					sensorData;
+					guidance;
+				}
+				doc /* Receives data from sensors, with guidance function for real-time user feedback. */
+			}
+			part def MoreProHeartRate {
+				/* * This is documentation of the owning
+				            * part.
+				            * Heart rate monitoring based on MorePro device, which provides continuous heart rate tracking. */
+				attribute heartRateData : ScalarValues::Real;
+				action monitorHeartRate {
+					/* * This is documentation of the owning
+					                * action.
+					                * Monitors heart rate in real-time, issuing alerts when abnormalities are detected. */
+					heartRateData;
+					action;
+				}
+				doc /* Heart rate monitoring based on MorePro device, which provides continuous heart rate tracking. */
+			}
+			part def WithingsOxygenMonitor {
+				/* * This is documentation of the owning
+				            * part.
+				            * Blood oxygen monitoring via Withings ScanWatch, with accurate, continuous SpO2 tracking. */
+				attribute oxygenLevelData : ScalarValues::Real;
+				action monitorOxygenLevel {
+					/* * This is documentation of the owning
+					                * action.
+					                * Measures blood oxygen levels and triggers alerts if levels fall below a safe threshold. */
+					oxygenLevelData;
+					action;
+				}
+				doc /*  Blood oxygen monitoring via Withings ScanWatch, with accurate, continuous SpO2 tracking. */
+			}
+			part def MoreProTemperature {
+				/* * This is documentation of the owning
+				            * part.
+				            * Body temperature monitoring with MorePro, capable of continuous temperature measurements. */
+				attribute temperatureData : ScalarValues::Real;
+				action monitorTemperature {
+					/* * This is documentation of the owning
+					                * action.
+					                * Monitors body temperature and issues fever alerts when temperatures rise above normal. */
+					temperatureData;
+					action;
+				}
+				doc /* Body temperature monitoring with MorePro, capable of continuous temperature measurements. */
+			}
+			part def GuidanceModule {
+				/* * This is documentation of the owning
+				            * part.
+				            * Provides lifestyle advice and health suggestions based on sensor data. */
+				action provideGuidance {
+					/* * This is documentation of the owning
+					                * action.
+					                * Analyzes incoming alert data to offer customized health recommendations. */
+					alertData : ScalarValues::Real;
+					lifestyleAdvice;
+				}
+				doc /*  Provides lifestyle advice and health suggestions based on sensor data. */
+			}
+			part def SamsungPressureMonitor {
+				/* * This is documentation of the owning
+				            * part.
+				            * Blood pressure monitoring using Samsung Galaxy Watch 5, suitable for frequent health check-ins. */
+				attribute bloodPressureData : ScalarValues::Real;
+				action monitorBloodPressure {
+					/* * This is documentation of the owning
+					                * action.
+					                * Tracks blood pressure values and provides alerts when hypertension risk is detected. */
+					bloodPressureData;
+					action;
+				}
+				doc /* Logs blood pressure readings; high readings trigger alerts for blood pressure management. */
+			}
+			part def WearableStrap {
+				/* * This is documentation of the owning
+				            * part.
+				            * The strap of the wearable device, customizable in material and size. */
+				attribute material;
+				attribute size;
+				doc /* The strap of the wearable device, customizable in material and size. */
+			}
+		}
+	}
+	package SmartHealthBraceletSystem_overview {
+		part def SmartHealthBracelet {
+			doc /* Integrated Smart Health Bracelet with real-world sensors and guidance module for health insights. */
+			part sensorModule : SensorModule;
+			part powerSupply : PowerSupply;
+			part wearableStrap : WearableStrap;
+			part processingUnit : ProcessingUnit;
+		}
+		part def SensorModule {
+			doc /* Contains monitoring sensors for heart rate, SpO2, blood pressure, and temperature. */
+			part heartRateSensor : MoreProHeartRate;
+			part oxygenMonitor : WithingsOxygenMonitor;
+			part pressureMonitor : SamsungPressureMonitor;
+			part temperatureSensor : MoreProTemperature;
+		}
+		part def PowerSupply {
+			doc /* Tracks battery level to ensure device operation with notifications for low charge. */
+		}
+		part def WearableStrap {
+			doc /* Customizable strap designed for comfortable wear. */
+		}
+		part def ProcessingUnit {
+			doc /* Processes sensor data and generates health guidance. */
+			part guidanceModule : GuidanceModule;
+		}
+		part def GuidanceModule {
+			doc /* Provides lifestyle advice and alerts for health readings based on sensor data. */
+			action provideGuidance;
+		}
+		part def MoreProHeartRate {
+			doc /* Heart rate monitoring using MorePro sensor. */
+			action monitorHeartRate;
+			data;
+			heartRateData;
+		}
+		part def WithingsOxygenMonitor {
+			doc /* SpO2 level monitoring using Withings ScanWatch. */
+			action monitorOxygenLevel;
+			data;
+			oxygenLevelData;
+		}
+		part def SamsungPressureMonitor {
+			doc /* Blood pressure monitoring using Samsung Galaxy Watch 5. */
+			action monitorBloodPressure;
+			data;
+			bloodPressureData;
+		}
+		part def MoreProTemperature {
+			doc /* Body temperature monitoring using MorePro sensor. */
+			action monitorTemperature;
+			data;
+			temperatureData;
+		}
+		data;
+	}
+}
