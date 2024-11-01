@@ -6,5 +6,5 @@ In this game, each role is represented by a set of specific SysML v2 parts and a
 
 ---
 
-![Collaborative Project Simulation Card Game](./image.png)
+![Collaborative Project Simulation Card Game](OIG4.MoomX6fDn8.jpg)
 
