@@ -1,4 +1,4 @@
-# Shooting Game Proof of Concept (POC) Model
+# Shooting Game Model Concept
 
 ![Game](./game.webp)
 This repository contains a simplified SysML v2 concept model for a basic shooting game. The model outlines core gameplay interactions between the `Player`, `Weapon`, and `Target`, serving as a foundation for testing essential game mechanics before full-scale implementation. 
