@@ -57,3 +57,5 @@ The structure for each model is as follows:
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/TrafficFlowPredictionSystem.git
+
+![Traffic Prediction SySTEM](https://github.com/lbalmelli/keio/blob/main/ClassOf2024/WANG%2CXINYU/trafficPredictionSystem.webp)
