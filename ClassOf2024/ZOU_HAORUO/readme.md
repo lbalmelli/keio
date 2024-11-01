@@ -64,3 +64,4 @@ For visual representation of the Smart Health Bracelet concept, please refer to 
 
 ![Smart Health Bracelet Concept](https://example.com/image.jpg)
 
+![Smart Health Bracelet Concept]
