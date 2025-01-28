@@ -1,0 +1,219 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 package AISmartInsole \{\
+    package Part_Definitions \{\
+        \
+        part def SmartInsole \{\
+            doc "The core insole containing sensors, processors, and communication components."\
+            \
+            part plantarPressureSensor: PlantarPressureSensor;\
+            part dataProcessor: DataProcessor;\
+            part memoryModule: MemoryModule;\
+            part wirelessTransmitter: WirelessTransmitter;\
+            part powerSupply: PowerSupply;\
+            part userInterface: UserInterface;\
+            part footwearInterface: FootwearInterface;\
+            part medicalInstitutionInterface: MedicalInstitutionInterface;\
+            part wearableDeviceInterface: WearableDeviceInterface;  // Interface to connect with wearable devices\
+            part battery: LiPoBattery; // Battery for power supply\
+            part microcontroller: ESP32; // Microcontroller to handle data processing and wireless communication\
+        \}\
+\
+        part def PlantarPressureSensor \{\
+            doc "Detects pressure changes on the foot for gait recognition."\
+            flow in ref pressureData: PressureData;\
+        \}\
+\
+        part def DataProcessor \{\
+            doc "Processes the pressure data using AI algorithms to recognize gait patterns."\
+            flow in ref pressureData: PressureData;\
+            flow out ref gaitAnalysisResult: GaitAnalysisResult;\
+        \}\
+\
+        part def MemoryModule \{\
+            doc "Stores pressure data history for analysis."\
+            flow in ref pressureData: PressureData;\
+        \}\
+\
+        part def WirelessTransmitter \{\
+            doc "Transmits data to medical institutions or cloud services."\
+            flow in ref gaitAnalysisResult: GaitAnalysisResult;\
+        \}\
+\
+        part def PowerSupply \{\
+            doc "Manages power to ensure continuous operation of the device."\
+        \}\
+\
+        part def UserInterface \{\
+            doc "Provides feedback to the user, including data visualization and alerts."\
+            flow out ref userFeedback: UserFeedback;\
+        \}\
+\
+        part def FootwearInterface \{\
+            doc "Ensures secure fit and stability of the insole within the footwear."\
+        \}\
+\
+        part def MedicalInstitutionInterface \{\
+            doc "Handles secure data interaction with medical systems."\
+            flow in ref gaitAnalysisResult: GaitAnalysisResult;\
+        \}\
+\
+        part def WearableDevice \{\
+            doc "A wearable device that pairs with the insole to enhance performance."\
+            part wearableDataProcessor: WearableDataProcessor; // New part for wearable-specific data processing\
+            part wearableInterface: WearableDeviceInterface; // Interface for wearable device\
+        \}\
+\
+        part def WearableDeviceInterface \{\
+            doc "Interface that enables communication between the insole and wearable device."\
+            flow in ref enhancedGaitData: GaitAnalysisResult; // The enhanced data coming from the wearable\
+        \}\
+\
+        part def WearableDataProcessor \{\
+            doc "Processes the data received from the insole and wearable device for better performance and result representation."\
+            flow in ref pressureData: PressureData;\
+            flow out ref enhancedGaitData: GaitAnalysisResult;\
+        \}\
+\
+        part def LiPoBattery \{\
+            doc "Provides power to the smart insole."\
+        \}\
+\
+        part def ESP32 \{\
+            doc "Microcontroller for data processing and wireless communication with Bluetooth and Wi-Fi support."\
+        \}\
+\
+        /* Data Types */\
+        part def PressureData \{\
+            doc "The pressure data captured by the PlantarPressureSensor."\
+        \}\
+\
+        part def GaitAnalysisResult \{\
+            doc "The output from DataProcessor or WearableDataProcessor after analyzing pressure data."\
+        \}\
+\
+        part def UserFeedback \{\
+            doc "Feedback to the user including alerts or data summaries."\
+        \}\
+    \}\
+\
+    package Function_Definitions \{\
+        \
+        function def RecordPlantarPressureHistory \{\
+            doc "Records the pressure data captured by the sensor."\
+            flow in ref pressureData: PressureData;\
+            flow to memoryModule.pressureData;\
+        \}\
+\
+        function def AnalyzeGait \{\
+            doc "Analyzes pressure data to detect gait patterns using AI algorithms."\
+            flow in ref pressureData: PressureData;\
+            flow out ref gaitAnalysisResult: GaitAnalysisResult;\
+        \}\
+\
+        function def TransmitData \{\
+            doc "Transmits gait analysis data to medical institutions."\
+            flow in ref gaitAnalysisResult: GaitAnalysisResult;\
+            flow to wirelessTransmitter.gaitAnalysisResult;\
+            flow to medicalInstitutionInterface.gaitAnalysisResult;\
+        \}\
+\
+        function def PowerManagement \{\
+            doc "Manages the power usage of the insole components."\
+        \}\
+\
+        function def ProvideUserFeedback \{\
+            doc "Displays feedback to the user about pressure data or gait analysis."\
+            flow out ref userFeedback: UserFeedback;\
+        \}\
+\
+        function def EnsureFit \{\
+            doc "Ensures the insole stays securely positioned within the footwear."\
+        \}\
+\
+        function def SecureDataTransfer \{\
+            doc "Ensures secure transfer of data to the medical institution."\
+            flow in ref gaitAnalysisResult: GaitAnalysisResult;\
+        \}\
+\
+        function def PairWithWearableDevice \{\
+            doc "Manages the pairing process between the smart insole and wearable device for enhanced performance."\
+            flow in ref pressureData: PressureData;\
+            flow out ref enhancedGaitData: GaitAnalysisResult;\
+            flow to wearableDeviceInterface.enhancedGaitData;\
+        \}\
+\
+        function def EnhancedPerformance \{\
+            doc "Enables the insole and wearable device to work together for enhanced performance."\
+            flow in ref enhancedGaitData from wearableDeviceInterface.enhancedGaitData;\
+            flow out ref finalGaitResult to userInterface.userFeedback;\
+        \}\
+    \}\
+\
+    package Context \{\
+        import Part_Definitions::*;\
+        import Function_Definitions::*;\
+\
+        part smartInsoleContext \{\
+            part smartInsole: SmartInsole;\
+            part wearableDevice: WearableDevice; // New part for wearable device\
+\
+            // Record and store pressure data\
+            function RecordPlantarPressureHistory \{\
+                in pressureData from plantarPressureSensor.pressureData\
+                to memoryModule.pressureData;\
+            \}\
+\
+            // Analyze gait from pressure data\
+            function AnalyzeGait \{\
+                in pressureData from plantarPressureSensor.pressureData\
+                out gaitAnalysisResult to dataProcessor.gaitAnalysisResult;\
+            \}\
+\
+            // Pairing and enhanced performance with wearable device\
+            function PairWithWearableDevice \{\
+                in pressureData from plantarPressureSensor.pressureData\
+                out enhancedGaitData to wearableDevice.wearableDataProcessor.enhancedGaitData;\
+            \}\
+\
+            function EnhancedPerformance \{\
+                in enhancedGaitData from wearableDevice.wearableDataProcessor.enhancedGaitData\
+                out finalGaitResult to userInterface.userFeedback;\
+            \}\
+\
+            // Transmit data to medical institutions\
+            function TransmitData \{\
+                in gaitAnalysisResult from dataProcessor.gaitAnalysisResult\
+                to wirelessTransmitter.gaitAnalysisResult;\
+                to medicalInstitutionInterface.gaitAnalysisResult;\
+            \}\
+\
+            // Power management\
+            function PowerManagement \{\
+                from powerSupply;\
+            \}\
+\
+            // Provide feedback to the user\
+            function ProvideUserFeedback \{\
+                out userFeedback to userInterface.userFeedback;\
+            \}\
+\
+            // Ensure secure fit in the footwear\
+            function EnsureFit \{\
+                from footwearInterface;\
+            \}\
+\
+            // Ensure secure data transfer to medical institution\
+            function SecureDataTransfer \{\
+                in gaitAnalysisResult from dataProcessor.gaitAnalysisResult\
+                to medicalInstitutionInterface.gaitAnalysisResult;\
+            \}\
+        \}\
+    \}\
+\}\
+}
