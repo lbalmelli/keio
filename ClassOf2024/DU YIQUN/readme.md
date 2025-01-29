@@ -68,7 +68,8 @@ This project is licensed under the **MIT License**.
 ## Contact
 For further inquiries or contributions, please reach out to the project team.
 
-![Wheelchair with Baby Seat](assets/wheelchair-baby-seat.jpg)
+<img width="518" alt="image" src="https://github.com/user-attachments/assets/5a702cc9-2e30-433d-8f5c-def44cb569b9" />
+
 
 
 
