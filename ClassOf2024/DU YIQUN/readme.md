@@ -94,7 +94,4 @@ Adjustable Canopy: To provide sun and weather protection.
 
 Additional Padding: For increased comfort for both the baby and the caregiver.
 
-Contributions
-
-Contributions to this project are welcome! Feel free to submit pull requests or suggestions to improve the design and functionality.
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/4e449e7f-4d34-4616-9fd6-96e1b52e386a" />
