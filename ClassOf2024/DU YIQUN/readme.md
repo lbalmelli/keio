@@ -1,97 +1,46 @@
-Wheelchair with Baby Seat
+# Wheelchair with Baby Seat
 
-Overview
+## Overview
+The **Wheelchair with Baby Seat** is a mobility device designed for caregivers who need to transport a baby while using a wheelchair. This system integrates a secure baby seat attachment to a standard wheelchair, ensuring safety, comfort, and ease of use.
 
-The Wheelchair with Baby Seat is a specially designed mobility solution for parents or caregivers who use a wheelchair and need a safe and comfortable way to transport their baby. This project aims to provide an integrated, ergonomic, and secure seating arrangement for infants while ensuring ease of use for the wheelchair user.
+## Features
+- **Ergonomic Design**: Ensures comfort for both the wheelchair user and the baby.
+- **Secure Baby Seat**: Firmly attached with adjustable safety belts.
+- **Modular Attachment System**: Allows for easy installation and removal.
+- **Reclining & Adjustable Seat**: Adaptable to different baby sizes and comfort levels.
+- **Lightweight & Durable Materials**: Ensures maneuverability while maintaining structural integrity.
+- **Safety Locks & Brakes**: Enhances stability and prevents unintended movement.
+- **Storage Compartment**: Additional space for baby essentials.
 
-SysML v2 Model Overview
+## System Components
+1. **Wheelchair Frame**: A sturdy yet lightweight frame ensuring mobility.
+2. **Baby Seat Attachment**: A detachable, safety-certified baby seat.
+3. **Safety Harness & Straps**: Securely holds the baby in place.
+4. **Locking Mechanism**: Prevents accidental detachment of the seat.
+5. **Storage Basket**: Provides space for carrying baby necessities.
+6. **Adjustable Footrests & Armrests**: Ensures comfort for the user.
 
-This project follows a SysML v2 model-based approach to system design, ensuring structured representation and analysis of the wheelchair with a baby seat. The model includes:
+## Installation
+1. **Attach the Baby Seat Bracket** to the designated wheelchair frame.
+2. **Secure the Baby Seat** using the built-in locks.
+3. **Adjust the Safety Harness** to fit the baby snugly.
+4. **Test Stability** by applying brakes and gently moving the wheelchair.
 
-Requirement Diagrams: Defining key user and system requirements.
+## Safety Guidelines
+- Always ensure that the **baby seat is properly locked** before use.
+- Never leave the baby unattended in the wheelchair seat.
+- Regularly check **straps, locks, and brakes** for wear and tear.
+- Do not exceed the recommended **weight limit** for the baby seat.
 
-Block Definition Diagrams (BDD): Representing system components and their relationships.
+## Future Enhancements
+- **Electric Assist Version** for easier maneuverability.
+- **Collapsible Design** for better portability.
+- **Smart Safety Sensors** to monitor baby comfort and wheelchair stability.
 
-Internal Block Diagrams (IBD): Illustrating internal structures and connections.
+## License
+This project is licensed under the **MIT License**.
 
-Parametric Diagrams: Modeling performance constraints and evaluations.
-
-State Machine Diagrams: Capturing different operational states of the system.
-
-By using SysML v2, the project ensures better traceability, maintainability, and adaptability for future improvements.
-
-Features
-
-Secure Baby Seat: A built-in baby seat with a safety harness to keep the baby protected.
-
-Adjustable Positioning: The baby seat can be adjusted to suit different user preferences and wheelchair designs.
-
-Detachable Design: Allows easy removal when not needed.
-
-Lightweight and Sturdy: Made from durable yet lightweight materials for ease of movement.
-
-Comfortable for Both Users: Designed to maintain balance and ergonomic comfort for the wheelchair user.
-
-Safety Mechanisms: Includes anti-tip support and locking mechanisms to ensure stability.
-
-Installation
-
-Attach the Mounting Frame: Secure the provided mounting frame onto the wheelchair using the included clamps or screws.
-
-Position the Baby Seat: Adjust the seat to the desired position and lock it in place.
-
-Secure the Baby: Use the provided safety harness to fasten the baby securely in the seat.
-
-Test for Stability: Before use, ensure that all components are properly installed and the wheelchair remains balanced.
-
-How to Use
-
-Prepare the Wheelchair: Ensure the wheelchair is stable and on a flat surface.
-
-Secure the Baby Seat: Check that the seat is firmly attached and properly adjusted.
-
-Fasten the Baby: Use the harness to secure the baby safely.
-
-Start Moving: Gently push the wheelchair, maintaining a steady speed.
-
-Monitor Safety: Regularly check the seat's stability and ensure the baby remains comfortable.
-
-Stop and Adjust: If needed, adjust the baby seat or wheelchair settings for better comfort and safety.
-
-Usage Guidelines
-
-Always ensure the baby is securely fastened in the seat before moving.
-
-Do not overload the wheelchair beyond its weight capacity.
-
-Regularly check the mounting frame and seat for any signs of wear or damage.
-
-Avoid rough terrain to prevent excessive shaking or instability.
-
-Never leave the baby unattended in the seat.
-
-Maintenance
-
-Regular Cleaning: Wipe down the baby seat and harness with a damp cloth.
-
-Check Fasteners: Inspect bolts, screws, and clamps for tightness.
-
-Inspect for Wear: Replace any worn-out or damaged parts promptly.
-
-Safety Considerations
-
-Ensure the wheelchair is equipped with a braking system before securing the baby seat.
-
-Use only manufacturer-approved accessories and replacement parts.
-
-Consult with a mobility expert if unsure about compatibility with your wheelchair model.
-
-Future Enhancements
-
-Foldable Baby Seat: For easier storage when not in use.
-
-Adjustable Canopy: To provide sun and weather protection.
-
-Additional Padding: For increased comfort for both the baby and the caregiver.
+## Contact
+For further inquiries or contributions, please reach out to the project team.
 
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/4e449e7f-4d34-4616-9fd6-96e1b52e386a" />
