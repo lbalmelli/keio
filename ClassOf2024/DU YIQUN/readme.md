@@ -12,6 +12,18 @@ The **Wheelchair with Baby Seat** is a mobility device designed for caregivers w
 - **Safety Locks & Brakes**: Enhances stability and prevents unintended movement.
 - **Storage Compartment**: Additional space for baby essentials.
 
+## Use Cases
+1. **Parent or Caregiver Mobility**  
+   - Allows wheelchair users to safely transport their baby while moving independently.
+2. **Hospitals & Rehabilitation Centers**  
+   - Assists patients with infants in rehabilitation facilities.
+3. **Shopping & Outdoor Activities**  
+   - Facilitates outings with the baby in malls, parks, and other public spaces.
+4. **Public Transport Accessibility**  
+   - Designed to fit within wheelchair-accessible transportation systems.
+5. **Elderly & Disabled Care**  
+   - Enables elderly caregivers who use wheelchairs to move with a baby safely.
+
 ## System Components
 1. **Wheelchair Frame**: A sturdy yet lightweight frame ensuring mobility.
 2. **Baby Seat Attachment**: A detachable, safety-certified baby seat.
@@ -25,6 +37,19 @@ The **Wheelchair with Baby Seat** is a mobility device designed for caregivers w
 2. **Secure the Baby Seat** using the built-in locks.
 3. **Adjust the Safety Harness** to fit the baby snugly.
 4. **Test Stability** by applying brakes and gently moving the wheelchair.
+
+## Proof-of-Concept (PoC) Approach
+To validate the feasibility of the **Wheelchair with Baby Seat**, we follow a structured PoC approach:
+1. **Conceptual Design & 3D Modeling**  
+   - Develop CAD models for the wheelchair and baby seat attachment.
+2. **Prototype Development**  
+   - Build an initial prototype using lightweight materials.
+3. **Safety & Load Testing**  
+   - Evaluate weight distribution and stress points.
+4. **User Testing & Feedback**  
+   - Conduct trials with wheelchair users and caregivers.
+5. **Iterative Improvements**  
+   - Incorporate feedback to refine the design and enhance usability.
 
 ## Safety Guidelines
 - Always ensure that the **baby seat is properly locked** before use.
@@ -43,4 +68,5 @@ This project is licensed under the **MIT License**.
 ## Contact
 For further inquiries or contributions, please reach out to the project team.
 
-<img width="518" alt="image" src="https://github.com/user-attachments/assets/4e449e7f-4d34-4616-9fd6-96e1b52e386a" />
+![Wheelchair with Baby Seat](https://example.com/wheelchair-baby-seat.jpg)
+
