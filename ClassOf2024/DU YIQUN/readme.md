@@ -62,8 +62,9 @@ To validate the feasibility of the **Wheelchair with Baby Seat**, we follow a st
 - **Collapsible Design** for better portability.
 - **Smart Safety Sensors** to monitor baby comfort and wheelchair stability.
 
-<img width="518" alt="image" src="https://github.com/user-attachments/assets/5a702cc9-2e30-433d-8f5c-def44cb569b9" />
-<img width="1260" alt="image" src="https://github.com/user-attachments/assets/1e370132-8e32-48bb-a467-30ef25b200b4" />
+<img width="641" alt="image" src="https://github.com/user-attachments/assets/36df8131-2189-491e-97e0-4ab7b955d096" />
+<img width="641" alt="image" src="https://github.com/user-attachments/assets/1149c131-6f61-4005-9fa9-5079f306aa08" />
+
 
 
 
