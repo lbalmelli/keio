@@ -22,3 +22,4 @@ fi
 echo "📘 Using local methodology at .keio/methodology.md"
 echo "💡 Prompts available at .keio/prompts/"
 echo "✅ Project structure verified for \"$folder_name\"."
+echo "➡️  Now run: cd .. && cd \"$folder_name\""
