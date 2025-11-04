@@ -1,2 +1,2 @@
 The **TranslationGlassPoC** model presents a proof-of-concept system for smart translation glasses that enable real-time subtitle overlay for multilingual users in dynamic environments. The model captures key hardware and behavioral elements, including audio input for speech capture, transparent visual output for subtitle display, and user interfaces for language selection and power control. By structuring the system with clearly defined ports, actions, and contextual user interactions, this model serves as a foundational step toward implementing an intelligent, wearable language assistance solution that enhances comprehension and interaction in global settings.
-
+google-featured.png
