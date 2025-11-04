@@ -1,7 +1,7 @@
 ## Landfill Solar Concept Model
 
 ### (1) Goal of the Concept
-The goal of this conceptual model is to evaluate and validate the feasibility of installing a solar photovoltaic system on a capped landfill. the purpose is giving a new economic value and life to this idle area. The system aims to deliver renewable energy while complying with environmental, technical, economic, and social constraints. The model is designed to support site planning, stakeholder involvement, incentive access, and proof-of-concept verification to enable informed investment and implementation decisions.
+The goal of this conceptual model is to evaluate and validate the feasibility of installing a solar photovoltaic system on a capped landfill. The purpose is giving a new economic value and life to this idle area. The system aims to deliver renewable energy while complying with environmental, technical, economic, and social constraints. The model is designed to support site planning, stakeholder involvement, incentive access, and proof-of-concept verification to enable informed investment and implementation decisions.
 
 ### (2) Approach to the Concept Creation
 The model was developed using SysML v2 to create a modular, traceable, and stakeholder-aware system architecture. It includes multiple packages:
