@@ -1,4 +1,4 @@
-package 'model' {
+package 'poc' {
 
    /* === ITEM DEFINITIONS === */
    item def SlideOperation {
@@ -241,3 +241,4 @@ package 'model' {
    Please note that this model does not refer to company internal libraries or other models that you have defined in previous sessions.
    However, you might use Acronio-Technology to ensure model compositionality.
 }
+
