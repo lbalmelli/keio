@@ -58,3 +58,4 @@ Unlike general-purpose smart glasses, this system targets aging adults with info
 
 ![Concept Model](./concept_model.png)
 
+*Diagram depicts users, wearable hardware, user interfaces (wearable/app/website), backend services (server/AI), and data paths between them.*
