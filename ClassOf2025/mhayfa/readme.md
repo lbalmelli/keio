@@ -1,4 +1,4 @@
-# PoC Smart Wearable System — Model Documentation
+# Smart Wearable Assistance System for Elderly
 
 ![Hero Image](./hero_image.png)
 
