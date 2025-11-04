@@ -1,4 +1,4 @@
-# Smart Wearable System & PAL Network for Elderly
+# Smart Wearable System & PAL Network for Elderly Assistance
 
 ![Hero Image](./hero_image.png)
 
