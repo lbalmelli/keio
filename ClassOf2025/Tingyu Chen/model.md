@@ -15,6 +15,7 @@ The primary goals of the MoveWell Smart Chair are to:
 - Provide **real-time feedback** using vibration alerts and display notifications.
 - Support **data synchronization** with an external application for posture tracking.
 - Demonstrate a **model-based co-design workflow** integrating hardware and software design in SysML v2.
+
 ---
 
 ## ⚙️ System Approach
@@ -46,6 +47,7 @@ The concept is based on a **Model-Based Systems Engineering (MBSE)** methodology
 | **Power Supply** | Anker PowerCore | Provides USB-C power to all active modules. |
 
 ---
+
 ## 🔄 Behavioral Model Summary
 ### Chair States
 - **Idle:** No user detected, system awaiting activation.  
@@ -62,6 +64,7 @@ The concept is based on a **Model-Based Systems Engineering (MBSE)** methodology
 - `Reset → Idle`: Upon new user detection.
 
 ---
+
 ## 🧠 Software & Connectivity
 The embedded firmware uses the **ESP32** controller for local logic, while the **Jetson Xavier NX** performs advanced analytics including:
 - Posture classification (using machine learning inference)
