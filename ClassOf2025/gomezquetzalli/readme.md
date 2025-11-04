@@ -1,4 +1,4 @@
-![img](https://github.com/user-attachments/assets/426d519d-cf7b-4a0d-a416-bc4da9d82b2b)🏁 Goal of the Concept
+🏁 Goal of the Concept
 
 To design and validate a hybrid material composed of carbon fiber reinforcement and recycled PET matrix that reduces weight, enhances aerodynamic formability, and meets recyclability goals for next-generation sports car body panels, all while being compatible with electrical and mechanical vehicle systems.
 
@@ -40,6 +40,3 @@ Ongoing: Capture improvement points and update model collaboratively
 🖼️ Visual Representation (Add to Markdown)
 ![PoC Exploded View](image.jpg)
 ![visual](img.jpg)
-
-
-
