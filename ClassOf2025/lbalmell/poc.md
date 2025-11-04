@@ -1,0 +1,12 @@
+# Proof-of-Concept Overview
+
+The proof-of-concept (POC) system is a physical instantiation of the conceptual IdeaWall model. It integrates real-world commercial components to prototype essential functionalities such as idea input, collaborative interaction, and early-stage data processing. The goal of this implementation is to validate the interaction of core components and assess how input modalities and system integration support collaborative idea development.
+
+The following table traces the relationships between the components of the conceptual model and their counterparts in the proof-of-concept implementation. It also provides insights into how each conceptual idea has been translated or adapted into a practical form.
+
+| **Conceptual Model Element** | **POC Model Element**                                                                    | **Transformation & Implementation Insight**                                                                                                                                       |
+| ---------------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `display: Display`           | `TouchWo_Interactive_Smartboard`                                                         | The abstract display concept was realized using a commercial smartboard that integrates both display and touch input features.                                                    |
+| `input: InputInterface`      | `Wacom_MovinkPad_11`, `ReSpeaker_USB_Mic_Array_v2_1`, `BrainLink_Lite_EEG_Headband` (×2) | Conceptual multi-modal input was concretely split into pen-based, voice, and brainwave interfaces to represent different modes of capturing ideas.                                |
+| `repository: IdeaRepository` | `MCP_Server`                                                                             | The abstract repository was partially implemented through a custom MCP server that provides agent-facing and API access to a hosted NoSQL database. Full backend not yet modeled. |
+| `IdeaWall`                   | `proofOfConceptSystem`                                                                   | The main system concept is represented as a structured part in the POC model, aggregating all selected commercial components without interconnection modeling yet.                |
