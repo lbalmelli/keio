@@ -55,7 +55,6 @@ The model is developed in SysML v2 to define system architecture, interaction fl
 Unlike general-purpose smart glasses, this system targets aging adults with information and memory needs. With personalized AI, family interaction, and volunteer services, the device functions as a cognitive support assistant rather than a simple wearable camera—improving relevance, usability, and business value through a staged rollout validated in real-world use.
 
 ## Visual Representation
-Include a system diagram illustrating architecture and data flows:
 
 ![Concept Model](./concept_model.png)
 
