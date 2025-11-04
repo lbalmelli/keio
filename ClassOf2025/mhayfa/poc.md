@@ -17,7 +17,8 @@ The goal of this proof-of-concept (PoC) is to validate the feasibility and integ
 | `AIService`                  | `Remote LLM (Cloud-based)`     | Provides large-model reasoning for non-realtime queries. Complementary to on-device AI.                                                |
 | `Website`                    | `Responsive Web Portal`        | Mirrors app functionality for families and volunteers. Connected via server APIs.                                                      |
 
+## Wearable Proof-of-Concept
 > ![PoC Wearable Diagram](./poc_wearable.png)
-> ![PoC System Diagram](./poc_system.png)
 
-Let me know if you'd like this formatted for export or accompanied by the actual visual image referenced in the markdown.
+## System Proof-of-Concept
+> ![PoC System Diagram](./poc_system.png)
