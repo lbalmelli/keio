@@ -59,4 +59,4 @@ Include a system diagram illustrating architecture and data flows:
 
 ![Concept Model](./concept_model.png)
 
-*Diagram should depict wearable hardware, user interfaces (wearable/app/website), backend services (server/AI), and data paths between them.*
+*Diagram depicts users, wearable hardware, user interfaces (wearable/app/website), backend services (server/AI), and data paths between them.*
