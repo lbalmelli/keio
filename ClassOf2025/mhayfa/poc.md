@@ -19,6 +19,8 @@ The goal of this proof-of-concept (PoC) is to validate the feasibility and integ
 
 ## Wearable Proof-of-Concept
 > ![PoC Wearable Diagram](./poc_wearable.png)
+> *Diagram depicts wearable hardware modules and data paths between them.*
 
 ## System Proof-of-Concept
 > ![PoC System Diagram](./poc_system.png)
+> *Diagram depicts user interfaces (wearable/app/website), backend services (server/AI), and data paths between them.*
